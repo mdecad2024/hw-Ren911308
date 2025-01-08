@@ -704,65 +704,9 @@ var viewer3d;
 </script>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/IUT21xhObVg?si=q5_JG2DTBYiyFaiK" title="YouTube video player" width="560"></iframe></p>
 <div class="viewer-container">
-<div class="viewer-wrapper">
-<div class="options"></div>
+<div class="viewer-wrapper"></div>
 </div>
-</div>
-<script type="text/javascript">
-var viewers = [];
-
-        function getOptions(viewerId) {
-            var mc = document.getElementById("mdlClr" + viewerId).value;
-            var bc1 = document.getElementById("bckClr1_" + viewerId).value;
-            var bc2 = document.getElementById("bckClr2_" + viewerId).value;
-            var ren = document.getElementById("render" + viewerId).value;
-            var def = document.getElementById("defini" + viewerId).value;
-            return {
-                ModelColor: mc,
-                BackgroundColor1: bc1,
-                BackgroundColor2: bc2,
-                RenderMode: ren,
-                Definition: def
-            };
-        }
-
-        function readSTLfile(viewerId, opt) {
-            var canvas = document.getElementById('cv' + viewerId);
-            var viewer3d = new JSC3D.Viewer(canvas);
-            viewer3d.setParameter('SceneUrl', opt.SceneUrl);
-            viewer3d.setParameter('InitRotationX', 0);
-            viewer3d.setParameter('InitRotationY', 0);
-            viewer3d.setParameter('InitRotationZ', 0);
-            viewer3d.setParameter('ModelColor', opt.ModelColor);
-            viewer3d.setParameter('BackgroundColor1', opt.BackgroundColor1);
-            viewer3d.setParameter('BackgroundColor2', opt.BackgroundColor2);
-            viewer3d.setParameter('RenderMode', opt.RenderMode);
-            viewer3d.setParameter('Definition', opt.Definition);
-            viewer3d.init();
-            viewer3d.update();
-            viewers[viewerId - 1] = viewer3d;  // Save viewer instance
-        }
-
-        function changeOption(viewerId, strOpt, strValue) {
-            console.log("change " + strOpt + " value " + strValue);
-            var options = getOptions(viewerId);
-            options[strOpt] = strValue;
-            readSTLfile(viewerId, options);
-        }
-
-        // Initialize all viewers
-        window.onload = function() {
-            var opts1 = { SceneUrl: 'https://s104.cycu.org/~41223121/17.stl', ...getOptions(1) };
-            readSTLfile(1, opts1);
-            var opts2 = { SceneUrl: 'https://s104.cycu.org/~41223121/31.stl', ...getOptions(2) };
-            readSTLfile(2, opts2);
-            var opts3 = { SceneUrl: 'https://s104.cycu.org/~41223121/29.stl', ...getOptions(3) };
-            readSTLfile(3, opts3);
-            var opts4 = { SceneUrl: 'https://s104.cycu.org/~41223121/27.stl', ...getOptions(4) };
-            readSTLfile(4, opts4);
-        };
-</script>
-<h2>w8</h2><h2>w11_hw</h2>
+<h2>w11_hw</h2>
 <p>本周需將<a href="https://mdecad2024.github.io/hw-41223136/downloads/flipper_nx2312.7z">flipper_nx2312.7z</a>檔案下載，分別以NX、solvespace 繪製其中的：</p>
 <p>Plongeur Batteur_sldprt.prt</p>
 <p>Piece composite_sldprt.prt</p>
@@ -1169,7 +1113,8 @@ var viewer3d;
 </script>
 <h2>w15</h2>
 <p><span>彈珠檯面板：560cm x 300cm 厚度 15cm</span></p>
-<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Tf9TaD1k7ns?si=X_7aiWccf3XjBKbH" title="YouTube video player" width="560"></iframe></p><h1>HW1</h1>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Tf9TaD1k7ns?si=X_7aiWccf3XjBKbH" title="YouTube video player" width="560"></iframe></p>
+<h1>HW1</h1>
 <p></p>
 <p>Homework 1 (10%):</p>
 <p style="padding-left: 30px;">利用 Solvespace 與 NX2312 建立 <a href="https://mde.tw/cad2024/content/Parts.html">Parts</a> 頁面中的零件</p>
@@ -1602,7 +1547,8 @@ var viewer3d;
 <h1>PINBALL</h1>
 <p><a href="/downloads/41223126PINBALL.zip">/downloads/41223126PINBALL.zip</a></p>
 <p>製作影片</p>
-<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/V7SGBctSxBI?si=EFkOOq3jF1jm_cJW" title="YouTube video player" width="560"></iframe></p><h1>Final Report</h1>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/V7SGBctSxBI?si=EFkOOq3jF1jm_cJW" title="YouTube video player" width="560"></iframe></p>
+<h1>Final Report</h1>
 <p>期末口頭與書面專題報告 (30%)</p>
 <p>期末口頭專題報告影片:</p>
 <p style="padding-left: 30px;">......</p>
